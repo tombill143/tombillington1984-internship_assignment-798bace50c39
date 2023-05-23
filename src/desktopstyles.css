@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.logo {
+  margin: 0;
+  padding: 1.5em;
+  color: white;
+}
+
+.page-title {
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+}
+
+.navigation a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+
+  transition: width 0.3s ease-in-out;
+}
+
+.navigation a {
+  position: relative;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.navigation a:hover::after {
+  width: 100%;
+}
+
+.coffeebeanimage {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.quote {
+  position: absolute;
+  top: 75%;
+  left: 48%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+  padding: 0.5em;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.masterWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Add padding to create some space */
+}
+
+.wrapper {
+  display: grid;
+  padding: 2em;
+  margin-left: 4em;
+  grid-template-columns: 65% 35%;
+}
+
+.articles {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+}
+
+.h1andptag {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  margin-left: 3em;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+h2 {
+  margin-left: 4em;
+  font-size: 12px;
+  width: 70%;
+  font-style: italic;
+  color: grey;
+}
+
+h3 {
+  font-size: 10px;
+  margin-left: 5em;
+}
+
+p {
+  width: 50%;
+  margin-left: 3em;
+}
+
+.articles button {
+  width: 15%;
+  cursor: pointer;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-left: 3.5em;
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.articles button:hover {
+  width: 15%;
+  cursor: pointer;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-left: 3.5em;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.sidebar button {
+  width: 50%;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 1em 2em; /* Increase padding here */
+  margin-top: 1em;
+  margin-left: 9.5em;
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.sidebar button:hover {
+  width: 50%;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 1em 2em; /* Increase padding here */
+  margin-top: 1em;
+  margin-left: 9.5em;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.articles img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.pageindex {
+  margin-top: 2em;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.pageindexbutton {
+  background-color: white;
+}
+
+.pageindexptag {
+  position: relative;
+  left: 15em;
+}
+
+.sponsorsdesktop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sponsorsdesktop img {
+  width: 10%; /* Adjust the width as needed */
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 4em;
+  margin: 1em;
+}
+
+.instagrampicsdesktop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  row-gap: 10px; /* Adjust the gap underneath the images as needed */
+  column-gap: 6px; /* Adjust the gap on the horizontal axis as needed */
+}
+
+.instagrampicsdesktop img {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.footergrid {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+}
+
+.titlewithfeeds {
+  display: flexbox;
+  margin-right: 16em;
+  margin-bottom: 6em;
+}
+
+.search-bar {
+  position: absolute;
+  top: 5%;
+  right: 10.2%;
+  transform: translateY(-50%);
+}
+
+input {
+  background-color: black;
+  color: white;
+  border: none;
+  margin-right: 0.3em;
+}
+
+.search-bar input::placeholder {
+  color: white; /* Change the color to your desired value */
+  border-bottom: 1px solid white;
+}
+
+.button-search {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5em;
+  cursor: pointer;
+  margin-bottom: 0.3em;
+}
+
+.button-search:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.socialmediaicons {
+  float: right;
+}
+
+.socialmediaicons > * {
+  margin-top: 1em;
+  margin-right: 22px; /* Adjust the value as per your preference */
+}
